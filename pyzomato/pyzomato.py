@@ -50,7 +50,7 @@ class Pyzomato(object):
 
     def getByGeocode(self, lan, lon):
         params = {"lan": lan, "lon": lon}
-        #FIXME: rename response
+        # FIXME: rename response
         response = self.api.get("/geocode", params)
         return response
 
@@ -103,7 +103,4 @@ class Pyzomato(object):
         results = self.api.get("/search", params)
         return results
 
-p = Pyzomato("d5f5291f614054e9819a97db69127015")
 
-r = p.search(query="new york")
-print r
