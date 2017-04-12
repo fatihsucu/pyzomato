@@ -10,7 +10,7 @@ class Api(object):
         self.headers = {
             "User-agent": "curl/7.43.0",
             'Accept': content_type,
-            'X-Zomato-API-Key': 'd5f5291f614054e9819a97db69127015'
+            'X-Zomato-API-Key': self.user_key
         }
 
     def get(self, endpoint, params):
