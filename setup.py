@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='pyzomato',
-      version='0.3',
+      version='0.4',
       description='Python Zomato Api Wrapper',
       url='https://github.com/fatihsucu/pyzomato',
       author='Fatih Sucu',
