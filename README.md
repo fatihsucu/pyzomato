@@ -22,7 +22,7 @@ This library provides a wrapper APIs of the Zomato.  It depends only on the stan
 ## Basic Usage
 
 ```
-from pyzomato.pyzomato import Pyzomato
+from pyzomato import Pyzomato
 
 p = Pyzomato(YOUR_API_KEY)
 p.search(q="london")

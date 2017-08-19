@@ -102,7 +102,7 @@ class Pyzomato(object):
         :param lon: longitude
         Get Foodie and Nightlife Index, list of popular cuisines and nearby restaurants around the given coordinates
         """
-        params = {"lan": lan, "lon": lon}
+        params = {"lat": lan, "lon": lon}
         response = self.api.get("/geocode", params)
         return response
 
