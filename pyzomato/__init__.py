@@ -1,2 +1,2 @@
-from api import Api
-from pyzomato import Pyzomato
+from .api import Api
+from .pyzomato import Pyzomato
