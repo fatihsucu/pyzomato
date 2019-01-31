@@ -96,13 +96,13 @@ class Pyzomato(object):
         establishments = self.api.get("/establishments", params)
         return establishments
 
-    def getByGeocode(self, lan, lon):
+    def getByGeocode(self, lat, lon):
         """
-        :param lan: latitude
+        :param lat: latitude
         :param lon: longitude
         Get Foodie and Nightlife Index, list of popular cuisines and nearby restaurants around the given coordinates
         """
-        params = {"lat": lan, "lon": lon}
+        params = {"lat": lat, "lon": lon}
         response = self.api.get("/geocode", params)
         return response
 
